@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Button</title>
+</head>
+
+<body style="text-align: center;">
+	<h1 style="color: #ff0000;">
+		Click this button
+	</h1>
+	<button style="font-weight: 800; font-size: 20px; border: 1px solid #000;" id="btn">Click Me</button>
+
+	<p style="color: #000;font-size: 20px;font-weight: 800;">
+		<span id="display">0</span> &nbsp Click
+	</p>
+
+	<script type="text/javascript">
+		var count = 0;
+		var btn = document.getElementById("btn");
+		var disp = document.getElementById("display");
+
+		btn.onclick = function () {
+			count++;
+			disp.innerHTML = count;
+		}
+	</script>
+</body>
+
+</html>

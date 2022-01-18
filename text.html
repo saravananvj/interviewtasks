@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Text</title>
+</head>
+<body style="text-align: center;">
+<h1 style="color: #ff0000;font-weight: 700;">Click this button to Change text.</h1>
+<button style="font-weight: 700; font-size: 20px;border: 1px solid #000;" id="text">Click me.</button>
+
+<script>
+document.getElementById("text").addEventListener("click", myFunction);
+
+function myFunction() {
+  document.getElementById("text").innerHTML = "SARAVANAN";
+}
+</script>
+
+</body>
+</html>
+
